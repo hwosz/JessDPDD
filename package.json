@@ -1,7 +1,6 @@
 {
   "scripts": {
-  "dev": "netlify dev",
-  "build": "npm run build"
+  "dev": "netlify dev"
   },
   "dependencies": {
     "@netlify/functions": "^3.0.1",
