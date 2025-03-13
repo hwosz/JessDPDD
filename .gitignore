@@ -88,8 +88,7 @@ public/
 # Stylelint cache
 .stylelintcache
 
-# HTML specific
-*.html
+/private/
 
 /.vscode
 .vscode/
@@ -99,7 +98,3 @@ public/
 !.vscode/launch.json
 !.vscode/extensions.json
 
-package.json
-package-lock.json
-yarn.lock
-```
