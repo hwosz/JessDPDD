@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "node index.js",
-    "build": "go build -o ./bin/go-app ./go-app/main.go"
+    "build": "npm run build"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
