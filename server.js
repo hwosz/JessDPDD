@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const env = require('dotenv').config();
 const app = express();
+const serverless = require('serverless-http');;
 const PORT = process.env.PORT;
 
 // Serve static files from the 'public' directory
@@ -19,3 +20,6 @@ app.get('/terms-and-conditions', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+app.use("/app/", router);
+export const handler = serverless(app);
