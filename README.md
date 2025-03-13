@@ -1,2 +1,2 @@
 # JessDPDD
-This repo is to store all work I have done under Jess
+Just so I can store work when I need to
