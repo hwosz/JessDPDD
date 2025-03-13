@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "node index.js",
-    "build": "npm run build"
+    "build": "build"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
