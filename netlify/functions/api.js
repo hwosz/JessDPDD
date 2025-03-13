@@ -1,5 +1,3 @@
-// netlify/functions/api.js
-
 const express = require("express");
 const serverless = require("serverless-http");
 const path = require("path");
@@ -20,10 +18,6 @@ app.get("/terms-and-conditions", (req, res) => {
 });
 
 const router = express.Router();
-
-router.get("/some-api-route", (req, res) => {
-  res.json({ message: "Hello from your API!" });
-});
 
 app.use("/app/", router);
 

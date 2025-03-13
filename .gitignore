@@ -96,5 +96,6 @@ dist/
 !.vscode/launch.json
 !.vscode/extensions.json
 
-
-.netlify.toml
+node_modules/
+package-lock.json
+.env
