@@ -1,4 +1,4 @@
-// netlify/functions/api.js (or whatever you name your function file)
+// netlify/functions/api.js
 
 const express = require("express");
 const serverless = require("serverless-http");
@@ -6,16 +6,16 @@ const path = require("path");
 
 const app = express();
 
-// Serve static files (if you have them in a 'public' folder)
-app.use(express.static(path.join(__dirname, "../../public"))); // Adjust path as needed
+// Serve static files
+app.use(express.static(path.join(__dirname, "../../public")));
 
 // Routes
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../../public", "index.html")); // Adjust path as needed
+  res.sendFile(path.join(__dirname, "../../public", "index.html"));
 });
 
 app.get("/terms-and-conditions", (req, res) => {
-  res.sendFile(path.join(__dirname, "../../public", "terms.html")); // Adjust path as needed
+  res.sendFile(path.join(__dirname, "../../public", "terms.html"));
 });
 
 const router = express.Router();
