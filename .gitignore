@@ -97,3 +97,5 @@ public/
 !.vscode/launch.json
 !.vscode/extensions.json
 
+
+.netlify.toml
